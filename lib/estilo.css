@@ -1,0 +1,388 @@
+@font-face {
+  font-family: 'likes';
+  src: url("../fonts/icomoon.eot?-etyqoi");
+  src: url("../fonts/icomoon.eot?#iefix-etyqoi") format('embedded-opentype'), url("../fonts/icomoon.woff?-etyqoi") format('woff'), url("../fonts/icomoon.ttf?-etyqoi") format('truetype'), url("../fonts/icomoon.svg?-etyqoi#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+p {
+  margin: 10;
+  padding: 10;
+  width: auto;
+}
+.jumbotron {
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+.foto {
+  width: 180px;
+  heigth: 80px;
+  border: 3px solid #000;
+  left: 100px;
+}
+.imagen {
+  margin: 0;
+  padding-right: 20%;
+  display: block;
+  position: relative;
+  float: right;
+}
+.navbar {
+  margin: 0;
+}
+.exp {
+  background: #394be2;
+  position: relative;
+  padding: 30px;
+  width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+.exp .titulo {
+  color: #000;
+  font-family: verdana;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.exp .principal {
+  margin-top: 0px;
+  border-radius: 50%;
+  background: #fff;
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.exp .principal:hover .ocultar {
+  display: inherit;
+  border-radius: 50%;
+  background: #58aaaf;
+  height: 200px;
+  width: 200px;
+  top: -144px;
+  overflow: hidden;
+  position: relative;
+  animation: hola 5s;
+  -moz-animation: hola 5s;
+  -webkit-animation: hola 5s;
+}
+.exp .principal:hover .ocultar p {
+  padding: 50px 0 0 0;
+  color: #000;
+}
+.exp .inicio p {
+  margin: 0px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  padding-top: 40px;
+}
+.exp .ocultar {
+  display: none;
+}
+.likes {
+  background: #fff;
+  position: relative;
+  padding-top: 30px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 0px;
+}
+.likes .titulo {
+  color: #000;
+  font-family: verdana;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.likes .center {
+  text-align: center;
+}
+.likes .peliculas {
+  padding-left: 20px;
+  font-family: "likes";
+  font-size: 90px;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  padding-right: 80px;
+}
+.likes .peliculas:hover {
+  color: #00f;
+}
+.likes .musica {
+  font-family: "likes";
+  font-size: 90px;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  padding-right: 80px;
+}
+.likes .musica:hover {
+  color: #642efe;
+}
+.likes .ajedrez {
+  font-family: "likes";
+  font-size: 90px;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  padding-right: 80px;
+}
+.likes .ajedrez:hover {
+  color: #f3f781;
+}
+.likes .games {
+  font-family: "likes";
+  font-size: 90px;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  padding-right: 80px;
+}
+.likes .games:hover {
+  color: #800080;
+}
+.likes .fut {
+  font-family: "likes";
+  font-size: 90px;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  padding-right: 80px;
+}
+.likes .fut:hover {
+  color: #acfa58;
+}
+.skills {
+  position: relative;
+  padding-top: 30px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: block;
+  margin-top: 0px;
+  text-align: center;
+  background-color: #394be2;
+}
+.skills .titulo {
+  color: #000;
+  position: relative;
+  font-family: verdana;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.skills .javascript {
+  height: 30px;
+  width: 50%;
+  margin: 10px;
+}
+.skills .php {
+  height: 30px;
+  width: 50%;
+  margin: 10px;
+}
+.skills .html5 {
+  height: 30px;
+  width: 50%;
+  margin: 10px;
+}
+.skills .css3 {
+  height: 30px;
+  width: 50%;
+  margin: 10px;
+}
+.center {
+  background: transparent;
+}
+.demos {
+  background: #808080;
+  position: relative;
+  padding-top: 30px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: block;
+  margin-top: 0px;
+}
+.demos .titulo {
+  color: #000;
+  font-family: verdana;
+  font-size: 45px;
+  height: auto;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.contacto {
+  background: #000;
+  color: #fff;
+  font-family: likes;
+  text-align: center;
+  font-size: 40px;
+}
+.contacto a {
+  display: none;
+}
+.contacto .correo {
+  display: inline-block;
+}
+.contacto .correo:before {
+  display: block;
+  padding-left: 40px;
+  content: "\e604";
+}
+.contacto .face {
+  display: inline-block;
+  margin: 20px;
+}
+.contacto .face:before {
+  display: inline-block;
+  content: "\e606";
+}
+.contacto .twet {
+  display: inline-block;
+  margin: 20px;
+}
+.contacto .twet:before {
+  display: inline-block;
+  content: "\e607";
+}
+.img-thumbnail {
+  position: relative;
+  top: 20px;
+}
+.row {
+  padding: 20px;
+}
+.thumbnail {
+  border: 10px;
+}
+.center {
+  text-align: center;
+}
+.progress {
+  display: inline-block;
+  border: 1px solid #000;
+}
+.progress-bar {
+  line-height: 30px;
+}
+.progress-bar-info {
+  background-color: #000;
+}
+.progress-bar-success {
+  background-color: #01df74;
+  font-weight: bold;
+  color: #000;
+}
+.progress-bar-warning {
+  background-color: #da81f5;
+  color: #000;
+  font-weight: bold;
+}
+@media screen and (max-width: 1000px) {
+  .imagen {
+    padding: 0;
+    margin: 30px;
+    float: right !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  span {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .exp .principal {
+    font-size: 39px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .container {
+    display: inline-block;
+    text-align: center;
+  }
+  .imagen {
+    padding-right: 15%;
+    margin: 0;
+  }
+  h1 {
+    margin-left: 40px;
+  }
+  p {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 368px) {
+  .imagen {
+    padding-right: 5%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 350px) {
+  .skills .titulo {
+    font-size: 35px;
+  }
+  .exp .titulo {
+    font-size: 35px;
+  }
+  .demos .titulo {
+    font-size: 35px;
+  }
+  .likes .titulo {
+    font-size: 35px;
+  }
+  .contacto {
+    font-size: 40px;
+  }
+}
+@-moz-keyframes hola {
+  to {
+    transform: rotatey(0deg);
+  }
+  from {
+    transform: rotatey(200deg);
+  }
+}
+@-webkit-keyframes hola {
+  to {
+    transform: rotatey(0deg);
+  }
+  from {
+    transform: rotatey(200deg);
+  }
+}
+@-o-keyframes hola {
+  to {
+    transform: rotatey(0deg);
+  }
+  from {
+    transform: rotatey(200deg);
+  }
+}
+@keyframes hola {
+  to {
+    transform: rotatey(0deg);
+  }
+  from {
+    transform: rotatey(200deg);
+  }
+}

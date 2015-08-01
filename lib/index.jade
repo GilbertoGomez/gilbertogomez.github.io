@@ -1,0 +1,48 @@
+doctype
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		title curriculum
+		<link href="./public/css/index.css" rel="stylesheet">
+	body
+		nav.navbar.navbar-inverse.navbar-fixed-top
+			div.container-fluid
+				div.navbar-header
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+			div.collapse.navbar-collapse#menu
+					ul.nav.navbar-nav
+						li.active
+							a(href="#") Inicio
+						li
+							a(href="#Demos") Demos
+						li
+							a(href="#Exp") Experiencia
+						li
+							a(href="#Likes") Gustos
+						li
+							a(href="#Contacto") Contacto
+		section.jumbotron
+			div.container
+				div.imagen
+					img.foto.img-circle(src="./public/img/demo.jpg" alt="img") 
+				h1 Gilberto Gomez
+				p Ing. Sistemas Computacionales 
+				p Front-End Developer
+		- var titulo = "Habilidades"
+			include ../lib/skills.jade
+		- var d = "Experiencia"
+			include ../lib/exp.jade
+		- var t = "Demos"
+			div.demos(id="Demos")
+				div.titulo #{t}
+					div.row
+						include ../lib/demos.jade
+		- var t = "Gustos"
+			include ../lib/likes.jade
+		include ../lib/contacto.jade
+	<script src="public/js/index.js"></script> 
