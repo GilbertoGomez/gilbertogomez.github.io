@@ -16,6 +16,6 @@
     "jade": "jade --pretty lib/index.jade --out ./",
     "estilo": "stylus lib/estilo.styl -w --out lib/",
     "server": "http-server .",
-    "compila": "browserify -t babelify lib/cambios.js > public/js/index.js"
+    "compila": "browserify -t babelify lib/controladores/control.js > public/js/index.js"
   }
 }

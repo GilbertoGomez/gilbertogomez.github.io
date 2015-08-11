@@ -2,8 +2,9 @@ doctype
 html(lang="es")
 	head
 		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width initial-scale=1.0")
 		title curriculum
-		<link href="./public/css/index.css" rel="stylesheet">
+		link(href="./public/css/index.css" rel="stylesheet")
 	body
 		nav.navbar.navbar-inverse.navbar-fixed-top
 			div.container-fluid
@@ -27,12 +28,15 @@ html(lang="es")
 						li
 							a(href="#Contacto") Contacto
 		section.jumbotron
-			div.container
+			div.ordenado
 				div.imagen
 					img.foto.img-circle(src="./public/img/demo.jpg" alt="img") 
-				h1 Gilberto Gomez
-				p Ing. Sistemas Computacionales 
-				p Front-End Developer
+					include ../lib/contacto.jade
+				div.princ
+					h1 Gilberto Gomez
+					p Ing. Sistemas Computacionales 
+					p Front-End Developer
+				include ../lib/about.jade
 		- var titulo = "Habilidades"
 			include ../lib/skills.jade
 		- var d = "Experiencia"
@@ -40,9 +44,8 @@ html(lang="es")
 		- var t = "Demos"
 			div.demos(id="Demos")
 				div.titulo #{t}
-					div.row
+					div.row.center-block
 						include ../lib/demos.jade
 		- var t = "Gustos"
 			include ../lib/likes.jade
-		include ../lib/contacto.jade
 	<script src="public/js/index.js"></script> 

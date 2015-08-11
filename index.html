@@ -2,7 +2,9 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>curriculum</title><link href="./public/css/index.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>curriculum</title>
+    <link href="./public/css/index.css" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -25,11 +27,22 @@
       </div>
     </nav>
     <section class="jumbotron">
-      <div class="container">
-        <div class="imagen"><img src="./public/img/demo.jpg" alt="img" class="foto img-circle"></div>
-        <h1>Gilberto Gomez</h1>
-        <p>Ing. Sistemas Computacionales </p>
-        <p>Front-End Developer</p>
+      <div class="ordenado">
+        <div class="imagen"><img src="./public/img/demo.jpg" alt="img" class="foto img-circle">
+          <div id="Contacto" class="contacto">
+            <div class="correo"><a href="mailto:jose.gilberto.gomez@gmail.com" target="_blank">Correo</a></div>
+            <div class="face"><a href="http://facebook.com" target="_blank">Facebook</a></div>
+            <div class="twet"><a href="http://twitter.com" target="_blank">twitter</a></div>
+          </div>
+        </div>
+        <div class="princ">
+          <h1>Gilberto Gomez</h1>
+          <p>Ing. Sistemas Computacionales </p>
+          <p>Front-End Developer</p>
+        </div>
+        <div role="alert" class="alert alert-info">
+          <h4>Apasionado de la tecnología y el mundo del Frontend. Geek de nacimiento, todo el dia estoy aprendiendo algo nuevo, me encantan los retos.</h4>
+        </div>
       </div>
     </section>
     <div class="skills">
@@ -97,13 +110,26 @@
     </div>
     <div id="Demos" class="demos">
       <div class="titulo">Demos
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="row center-block">
+          <div class="col-md-4 col-lg-4">
             <div class="thumbnail"><img src="./public/img/demo1.png" alt="#" class="img-responsive img-thumbnail">
               <div class="caption">
-                <h2>Juego Dos Beta 0.0.1</h2>
-                <h4>Juego dos una mala copia del juego uno, hecha con la libreria de Jquery</h4>
-                <p> <a href="http://gilbertogomez.github.io/gamedos/" role="button" class="btn btn-primary">Demostracion...</a></p>
+                <h3>Juego Dos Beta</h3>
+                <div class="media-body">
+                  <div class="text">Juego dos una copia del juego uno,con la libreria de Jquery</div>
+                  <p><a href="http://gilbertogomez.github.io/gamedos/" role="button" class="btn btn-primary">Demo...</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 center-block">
+            <div class="thumbnail"><img src="./public/img/angular.jpg" alt="#" class="img-responsive img-thumbnail">
+              <div class="caption">
+                <h3>Demo Angular</h3>
+                <div class="media-body">
+                  <div class="text">Pequeño demo de las rutas en angular tiene la libreria Chart.js para hacer graficas</div>
+                  <p> <a href="http://gilbertogomez.github.io/angular/" role="button" class="btn btn-primary">Demo...</a></p>
+                </div>
               </div>
             </div>
           </div>
@@ -112,8 +138,8 @@
     </div>
     <div id="Likes" class="likes">
       <div class="titulo">Gustos</div>
-      <div class="row center"> 
-        <div class="col-sm-12 col-md-12 col-lg-12">
+      <div class="row">
+        <div class="col-md-8 col-lg-9 cent">
           <span class="peliculas">&#xe603;</span>
           <span class="fut">&#xe601;</span>
           <span class="ajedrez">&#xe03b;</span>
@@ -121,11 +147,6 @@
           <span class="games">&#xe600;</span>
         </div>
       </div>
-    </div>
-    <div id="Contacto" class="contacto">
-      <div class="correo"><a href="mailto:jose.gilberto.gomez@gmail.com" target="_blank">Correo</a></div>
-      <div class="face"><a href="http://facebook.com" target="_blank">Facebook</a></div>
-      <div class="twet"><a href="http://twitter.com" target="_blank">twitter</a></div>
     </div>
   </body><script src="public/js/index.js"></script> 
 </html>
