@@ -1,51 +1,47 @@
-doctype
+<!DOCTYPE html>
 html(lang="es")
-	head
-		meta(charset="utf-8")
-		meta(name="viewport" content="width=device-width initial-scale=1.0")
-		title curriculum
-		link(href="./public/css/index.css" rel="stylesheet")
-	body
-		nav.navbar.navbar-inverse.navbar-fixed-top
-			div.container-fluid
-				div.navbar-header
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				</button>
-			div.collapse.navbar-collapse#menu
-					ul.nav.navbar-nav
-						li.active
-							a(href="#") Inicio
-						li
-							a(href="#Demos") Demos
-						li
-							a(href="#Exp") Experiencia
-						li
-							a(href="#Likes") Gustos
-						li
-							a(href="#Contacto") Contacto
-		section.jumbotron
-			div.ordenado
-				div.imagen
-					img.foto.img-circle(src="./public/img/demo.jpg" alt="img") 
-					include ../lib/contacto.jade
-				div.princ
-					h1 Gilberto Gomez
-					p Ing. Sistemas Computacionales 
-					p Front-End Developer
-				include ../lib/about.jade
-		- var titulo = "Habilidades"
-			include ../lib/skills.jade
-		- var d = "Experiencia"
-			include ../lib/exp.jade
-		- var t = "Demos"
-			div.demos(id="Demos")
-				div.titulo #{t}
-					div.row.center-block
-						include ../lib/demos.jade
-		- var t = "Gustos"
-			include ../lib/likes.jade
-	<script src="public/js/index.js"></script> 
+head
+	meta(charset="UTF-8")
+	link(type="text/css" rel="stylesheet" href="./lib/materialize.css")
+	link(type="text/css" rel="stylesheet" href="./lib/index.css")
+	meta(name="viewport" content="width=device-width, initial-scale=1.0")
+	title CV
+div.navbar-fixed
+	nav
+		div.nav-wrapper.blue.darken-3
+			a.brand-logo(href="#" ) CV
+			ul.right.hide-on-med-and-down#nav-mobile
+				li
+					a(href="#demos") Demos
+				li
+					a(href="#experiencia") Experiencia
+				li
+					a(href="#") Contacto
+				li
+					a(href="#") Gustos
+body
+	div.row
+		div.col.s12.m4.l3.center
+			img.border.circle.responsive-img(src="./public/img/demo.jpg",alt="#")
+		div.col.s12.m4.l5.center
+				h2 Gilberto Gomez
+				h4 Front-End Developer
+		div.col.s12.m4.l4
+			div.card-panel.light-blue.darken-1.margin
+				span.white-text Apasionado de la tecnología y el mundo del Frontend. Geek de nacimiento, todo el dia estoy aprendiendo algo nuevo,me encantan los retos.
+					
+	div.row.cyan.lighten-1
+		include ../lib/exp.jade
+		include ../lib/edu.jade
+	div.row.blue.lighten-4
+		include ../lib/skills.jade
+	div.row.indigo.lighten-2
+		include ../lib/demos.jade
+footer.black
+	div.row
+		div.col.s12.l12.center
+			span.white-text 
+script(type="text/javascript" src="public/js/index.js")
+script(type="text/javascript" src="lib/materialize.js")
+
+	

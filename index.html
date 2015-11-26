@@ -1,152 +1,156 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>curriculum</title>
-    <link href="./public/css/index.css" rel="stylesheet">
-  </head>
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header"></div><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div id="menu" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Inicio</a></li>
-          <li><a href="#Demos">Demos</a></li>
-          <li><a href="#Exp">Experiencia</a></li>
-          <li><a href="#Likes">Gustos</a></li>
-          <li><a href="#Contacto">Contacto</a></li>
-        </ul>
-      </div>
-    </nav>
-    <section class="jumbotron">
-      <div class="ordenado">
-        <div class="imagen"><img src="./public/img/demo.jpg" alt="img" class="foto img-circle">
-          <div id="Contacto" class="contacto">
-            <div class="correo"><a href="mailto:jose.gilberto.gomez@gmail.com" target="_blank">Correo</a></div>
-            <div class="face"><a href="http://facebook.com" target="_blank">Facebook</a></div>
-            <div class="twet"><a href="http://twitter.com" target="_blank">twitter</a></div>
-          </div>
-        </div>
-        <div class="princ">
-          <h1>Gilberto Gomez</h1>
-          <p>Ing. Sistemas Computacionales </p>
-          <p>Front-End Developer</p>
-        </div>
-        <div role="alert" class="alert alert-info">
-          <h4>Apasionado de la tecnología y el mundo del Frontend. Geek de nacimiento, todo el dia estoy aprendiendo algo nuevo, me encantan los retos.</h4>
-        </div>
-      </div>
-    </section>
-    <div class="skills">
-      <div class="titulo">Habilidades</div>
+<html lang="es"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <link type="text/css" rel="stylesheet" href="./lib/materialize.css"/>
+  <link type="text/css" rel="stylesheet" href="./lib/index.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV</title>
+</head>
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper blue darken-3"><a href="#" class="brand-logo">CV</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#demos">Demos</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Gustos</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<body>
+  <div class="row">
+    <div class="col s12 m4 l3 center"><img src="./public/img/demo.jpg" alt="#" class="border circle responsive-img"/></div>
+    <div class="col s12 m4 l5 center">
+      <h2>Gilberto Gomez</h2>
+      <h4>Front-End Developer</h4>
+    </div>
+    <div class="col s12 m4 l4">
+      <div class="card-panel light-blue darken-1 margin"><span class="white-text">Apasionado de la tecnología y el mundo del Frontend. Geek de nacimiento, todo el dia estoy aprendiendo algo nuevo,me encantan los retos.</span></div>
+    </div>
+  </div>
+  <div class="row cyan lighten-1">
+    <div class="col s12 l12"><span class="center">
+        <h3 id="experiencia">Experiencia</h3></span>
       <div class="center">
-        <div class="progress javascript">
-          <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%" class="progress-bar progress-bar-striped active"><span>JAVASCRIPT 50%</span></div>
-        </div>
-        <div class="progress php">
-          <div role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%" class="progress-bar progress-bar-info progress-bar-striped active"><span>PHP 30%</span></div>
-        </div>
-        <div class="progress html5">
-          <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%" class="progress-bar progress-bar-success progress-bar-striped active"><span>HTML5 80%</span></div>
-        </div>
-        <div class="progress css3">
-          <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%" class="progress-bar progress-bar-warning progress-bar-striped active"><span>CSS3 80%</span></div>
-        </div>
-        <div class="progress css3">
-          <div role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%" class="progress-bar progress-bar-info progress-bar-striped active"><span>PYTHON 30%</span></div>
-        </div>
-      </div>
-    </div>
-    <div id="Exp" class="exp">
-      <div class="titulo">Experiencia</div>
-      <div class="principal">
-        <div class="inicio">
-          <p>Hola Mundo</p>
-        </div>
-        <div id="1" class="ocultar">
-          <p>1988</p>
-        </div>
-      </div>
-      <div class="principal">
-        <div class="inicio">
-          <p>IEU Universidad</p>
-        </div>
-        <div id="2" class="ocultar">
-          <p>3 años</p>
-        </div>
-      </div>
-      <div class="principal">
-        <div class="inicio">
-          <p>SEP Practicas</p>
-        </div>
-        <div id="3" class="ocultar">
-          <p>6 meses</p>
-        </div>
-      </div>
-      <div class="principal">
-        <div class="inicio">
-          <p>SATI practicas</p>
-        </div>
-        <div id="4" class="ocultar">
-          <p>6 meses</p>
-        </div>
-      </div>
-      <div class="principal">
-        <div class="inicio">
-          <p>Idea Interior</p>
-        </div>
-        <div id="5" class="ocultar">
-          <p>2 años</p>
-        </div>
-      </div>
-    </div>
-    <div id="Demos" class="demos">
-      <div class="titulo">Demos
-        <div class="row center-block">
-          <div class="col-md-4 col-lg-4">
-            <div class="thumbnail"><img src="./public/img/demo1.png" alt="#" class="img-responsive img-thumbnail">
-              <div class="caption">
-                <h3>Juego Dos Beta</h3>
-                <div class="media-body">
-                  <div class="text">Juego dos una copia del juego uno,con la libreria de Jquery</div>
-                  <p><a href="http://gilbertogomez.github.io/gamedos/" role="button" class="btn btn-primary">Demo...</a></p>
-                </div>
-              </div>
-            </div>
+        <div class="principal">
+          <div class="inicio">
+            <p>SEP Servicio S.</p>
           </div>
-          <div class="col-md-4 col-lg-4 center-block">
-            <div class="thumbnail"><img src="./public/img/angular.jpg" alt="#" class="img-responsive img-thumbnail">
-              <div class="caption">
-                <h3>Demo Angular</h3>
-                <div class="media-body">
-                  <div class="text">Pequeño demo de las rutas en angular tiene la libreria Chart.js para hacer graficas</div>
-                  <p> <a href="http://gilbertogomez.github.io/angular/" role="button" class="btn btn-primary">Demo...</a></p>
-                </div>
-              </div>
-            </div>
+          <div id="3" class="ocultar">
+            <p>6 meses</p>
+          </div>
+        </div>
+        <div class="principal">
+          <div class="inicio">
+            <p>SATI Practicas</p>
+          </div>
+          <div id="4" class="ocultar">
+            <p>6 meses</p>
+          </div>
+        </div>
+        <div class="principal">
+          <div class="inicio">
+            <p>Idea Interior</p>
+          </div>
+          <div id="5" class="ocultar">
+            <p>2 años</p>
           </div>
         </div>
       </div>
     </div>
-    <div id="Likes" class="likes">
-      <div class="titulo">Gustos</div>
-      <div class="row">
-        <div class="col-md-8 col-lg-9 cent">
-          <span class="peliculas">&#xe603;</span>
-          <span class="fut">&#xe601;</span>
-          <span class="ajedrez">&#xe03b;</span>
-          <span class="musica">&#xe602;</span>
-          <span class="games">&#xe600;</span>
+    <div class="col s12 l12"><span class="center">
+        <h3>Educacion</h3></span>
+      <div class="center">
+        <div class="principal">
+          <div class="inicio">
+            <p>Hola Mundo</p>
+          </div>
+          <div id="1" class="ocultar">
+            <p>1988</p>
+          </div>
+        </div>
+        <div class="principal">
+          <div class="inicio">
+            <p>IEU Universidad</p>
+          </div>
+          <div id="2" class="ocultar">
+            <p>3 años</p>
+          </div>
+        </div>
+        <div class="principal">
+          <div class="inicio">
+            <p>Platzi Cursos</p>
+          </div>
+          <div id="5" class="ocultar">
+            <p>2015</p>
+          </div>
         </div>
       </div>
     </div>
-  </body><script src="public/js/index.js"></script> 
-</html>
+  </div>
+  <div class="row blue lighten-4">
+    <div class="col s12 l12"><span class="center">
+        <h3>Habilidades</h3></span>
+      <div class="center">
+        <object>
+          <embed src="./public/img/javascript.svg" class="circle"/>
+        </object>
+        <object>
+          <embed src="./public/img/html5.svg"/>
+        </object>
+        <object>
+          <embed src="./public/img/css3.svg"/>
+        </object>
+        <object>
+          <embed src="./public/img/bootstrap.svg" class="circle"/>
+        </object>
+        <object>
+          <embed src="./public/img/angular.svg"/>
+        </object>
+        <object>
+          <embed src="./public/img/jquery.svg"/>
+        </object>
+      </div>
+    </div>
+  </div>
+  <div class="row indigo lighten-2">
+    <div class="col s12 l12"><span class="center">
+        <h3 id="demos" class="white-text">Demos</h3></span></div>
+    <div class="col s12 m3">
+      <div class="card large">
+        <div class="card-image"><img src="./public/img/uno.jpg" alt="#"/><span class="card-title red-text">juego Dos</span></div>
+        <div class="card-content">
+          <p>Una copia del juego de cartas llamado UNO, desarrollado con la libreria Jquery.Beta aun no esta terminado.</p>
+        </div>
+        <div class="card-action"><a href="http://gilbertogomez.github.io/gamedos/" class="waves-effect waves-light blue lighten-3 btn-large black-text">ver Demo</a></div>
+      </div>
+    </div>
+    <div class="col s12 m3">
+      <div class="card large">
+        <div class="card-image"><img src="./public/img/angular.jpg" alt="#"/><span class="card-title red-text">Demo SPA</span></div>
+        <div class="card-content">
+          <p>Pequeño demo de lo que es una Single Page Application desarrollado con Angular, Chart.js y Bootstrap.</p>
+        </div>
+        <div class="card-action"><a href="http://gilbertogomez.github.io/angular/#/" class="waves-effect waves-light blue lighten-3 btn-large black-text">ver Demo</a></div>
+      </div>
+    </div>
+    <div class="col s12 m3">
+      <div class="card large">
+        <div class="card-image"><img src="./public/img/lp.jpg" alt="#"/><span class="card-title red-text">Landing Page</span></div>
+        <div class="card-content">
+          <p>Demo de una landing Page que hice para IEXE desarrollado con Bootstrap.</p>
+        </div>
+        <div class="card-action"><a href="http://gilbertogomez.github.io/landingpage/" class="waves-effect waves-light blue lighten-3 btn-large black-text">ver Demo</a></div>
+      </div>
+    </div>
+  </div>
+</body>
+<footer class="black">
+  <div class="row">
+    <div class="col s12 l12 center"><span class="white-text"> </span></div>
+  </div>
+</footer>
+<script type="text/javascript" src="public/js/index.js"></script>
+<script type="text/javascript" src="lib/materialize.js"></script>
