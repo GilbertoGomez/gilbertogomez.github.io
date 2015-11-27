@@ -2,36 +2,42 @@
 <html lang="es"></html>
 <head>
   <meta charset="UTF-8"/>
-  <link type="text/css" rel="stylesheet" href="./lib/materialize.css"/>
-  <link type="text/css" rel="stylesheet" href="./lib/index.css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <link type="text/css" rel="stylesheet" href="./public/css/index.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CV</title>
 </head>
 <div class="navbar-fixed">
   <nav>
-    <div class="nav-wrapper blue darken-3"><a href="#" class="brand-logo">CV</a>
+    <div class="nav-wrapper blue darken-3"><a href="/" class="brand-logo">CV</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="#demos">Demos</a></li>
         <li><a href="#experiencia">Experiencia</a></li>
         <li><a href="#">Contacto</a></li>
         <li><a href="#">Gustos</a></li>
       </ul>
+      <ul id="slide-out" class="side-nav">
+        <li><a href="#demos">Demos</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Gustos</a></li>
+      </ul><a href="#" data-activates="slide-out" class="button-collapse"><i class="medium material-icons">view_headline</i></a>
     </div>
   </nav>
 </div>
 <body>
-  <div class="row">
+  <div id="main" class="row">
     <div class="col s12 m4 l3 center"><img src="./public/img/demo.jpg" alt="#" class="border circle responsive-img"/></div>
     <div class="col s12 m4 l5 center">
       <h2>Gilberto Gomez</h2>
       <h4>Front-End Developer</h4>
     </div>
     <div class="col s12 m4 l4">
-      <div class="card-panel light-blue darken-1 margin"><span class="white-text">Apasionado de la tecnología y el mundo del Frontend. Geek de nacimiento, todo el dia estoy aprendiendo algo nuevo,me encantan los retos.</span></div>
+      <div class="card-panel light-blue darken-1 margin hoverable"><span class="white-text">Apasionado de la tecnología y el mundo del Frontend. Geek de nacimiento, todo el dia estoy aprendiendo algo nuevo,me encantan los retos.</span></div>
     </div>
   </div>
   <div class="row cyan lighten-1">
-    <div class="col s12 l12"><span class="center">
+    <div id="slideInRight" class="col s12 l12"><span class="center">
         <h3 id="experiencia">Experiencia</h3></span>
       <div class="center">
         <div class="principal">
@@ -60,8 +66,8 @@
         </div>
       </div>
     </div>
-    <div class="col s12 l12"><span class="center">
-        <h3>Educacion</h3></span>
+    <div id="rollIn" class="col s12 l12"><span class="center">
+        <h3 id="educacion">Educacion</h3></span>
       <div class="center">
         <div class="principal">
           <div class="inicio">
@@ -118,17 +124,17 @@
   <div class="row indigo lighten-2">
     <div class="col s12 l12"><span class="center">
         <h3 id="demos" class="white-text">Demos</h3></span></div>
-    <div class="col s12 m3">
-      <div class="card large">
-        <div class="card-image"><img src="./public/img/uno.jpg" alt="#"/><span class="card-title red-text">juego Dos</span></div>
+    <div class="col s12 m3 fadeIn1 opacity">
+      <div class="card large hoverable">
+        <div class="card-image"><img src="./public/img/uno.jpg" alt="#"/><span class="card-title black-text">Juego Dos</span></div>
         <div class="card-content">
           <p>Una copia del juego de cartas llamado UNO, desarrollado con la libreria Jquery.Beta aun no esta terminado.</p>
         </div>
         <div class="card-action"><a href="http://gilbertogomez.github.io/gamedos/" class="waves-effect waves-light blue lighten-3 btn-large black-text">ver Demo</a></div>
       </div>
     </div>
-    <div class="col s12 m3">
-      <div class="card large">
+    <div class="col s12 m3 fadeIn1 opacity">
+      <div class="card large hoverable">
         <div class="card-image"><img src="./public/img/angular.jpg" alt="#"/><span class="card-title red-text">Demo SPA</span></div>
         <div class="card-content">
           <p>Pequeño demo de lo que es una Single Page Application desarrollado con Angular, Chart.js y Bootstrap.</p>
@@ -136,8 +142,8 @@
         <div class="card-action"><a href="http://gilbertogomez.github.io/angular/#/" class="waves-effect waves-light blue lighten-3 btn-large black-text">ver Demo</a></div>
       </div>
     </div>
-    <div class="col s12 m3">
-      <div class="card large">
+    <div class="col s12 m3 fadeIn1 opacity">
+      <div class="card large hoverable">
         <div class="card-image"><img src="./public/img/lp.jpg" alt="#"/><span class="card-title red-text">Landing Page</span></div>
         <div class="card-content">
           <p>Demo de una landing Page que hice para IEXE desarrollado con Bootstrap.</p>
@@ -152,5 +158,5 @@
     <div class="col s12 l12 center"><span class="white-text"> </span></div>
   </div>
 </footer>
-<script type="text/javascript" src="public/js/index.js"></script>
-<script type="text/javascript" src="lib/materialize.js"></script>
+<script type="text/javascript" src="./public/js/index.js"></script>
+<script type="text/javascript" src="./public/js/materialize.js"></script>
