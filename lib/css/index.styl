@@ -1,0 +1,172 @@
+@import 'nib'
+
+@font-face
+  font-family 'contacto'
+  src url("../font/icomoon.eot?-etyqoi")
+  src url("../font/icomoon.eot?#iefix-etyqoi") format('embedded-opentype'), url("../font/icomoon.woff?-etyqoi") format('woff'), url("../font/icomoon.ttf?-etyqoi") format('truetype'), url("../font/icomoon.svg?-etyqoi#icomoon") format('svg')
+  font-weight normal
+  font-style normal
+
+nav
+  ul
+    li
+      &:hover
+        background #2196f3
+
+.iconos
+  font-size 25px
+  color #fff
+
+.icon-cross
+  font-family contacto
+  color #f00
+  font-size 30px !important
+  &:before
+    content "\e901"
+
+.cerrar
+  top 0
+  position absolute !important
+  display flex !important
+  width 100%
+  left 0
+  padding 20px
+  flex-direction row-reverse
+
+.align
+  align-items center
+  display flex
+  color #fff
+  font-size 25px
+
+.margen
+  margin-right 20px
+
+.icon-mail4
+  font-family contacto
+  color #fff
+  font-size 50px !important
+  &:before
+    content "\e900"
+
+.icon-facebook3
+  font-family contacto
+  color #fff
+  font-size 50px !important
+  &:before
+    content "\e802"
+
+.icon-twitter3
+  font-family contacto
+  color #fff
+  font-size 50px !important
+  &:before
+    content "\e803"
+
+.brand-logo
+  margin-left 30px
+
+.card-title
+  font-weight bold !important
+  font-size 30px !important
+  background #f5f5f5
+
+.row
+  margin 0 !important
+
+footer
+  padding 0 !important
+  display flex
+  justify-content center
+  align-items center
+
+.center
+  span
+    font-size 16px
+
+.card-panel
+  span
+    font-size 16px !important
+    font-family verdana !important
+
+.border
+  border 4px solid #1e88e5
+
+.margin
+  margin-top 25px !important
+
+.principal
+  margin-top 0px
+  -webkit-border-radius 50%
+  border-radius 50%
+  background #fff
+  height 200px
+  width 200px
+  display inline-block
+  position relative
+  margin 10px
+  overflow hidden
+  font-size 40px
+  font-weight bold
+  text-align center
+  &:hover
+    .ocultar
+      display inherit
+      border-radius 50%
+      background #2196f3
+      height 200px
+      width 200px
+      top -150px
+      overflow hidden
+      position relative
+      animation hola 5s
+      p
+        padding 0px
+        margin 0
+        position relative
+        top 50px
+        color #000
+  .inicio
+    p
+      margin 0px
+      font-size 30px
+      font-weight bold
+      text-align center
+      padding 20px
+      padding-top 40px
+  .ocultar
+    display none
+
+.pad
+  padding-bottom 15px !important
+
+.pad-right
+  padding-right 40px !important
+
+.fix
+  top -200px !important
+
+.nuevo
+  display flex
+  height 100%
+  justify-content center
+  align-items center
+  p
+    margin 0 !important
+    padding 0!important
+    width 100%
+    
+#rollIn
+  animation-duration 4s
+
+#slideInRight
+  animation-duration 4s
+
+@keyframes hola {
+  to {
+    transform: rotatey(0deg);
+  }
+  from {
+    transform: rotatey(200deg);
+  }
+}
