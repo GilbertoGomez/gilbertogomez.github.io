@@ -1,16 +1,10 @@
-/*
-* Dependencias
-*/
-
-var gulp = require('gulp')
-var conc = require('gulp-concat')
-var mini = require('gulp-minify-css')
-
-//tares de gulp  compilar y tarea concatena
+var gulp = require('gulp');
+var concat = require('gulp-concat');
+var cleanCSS = require('gulp-clean-css');
 
 gulp.task('css',function (){
-	gulp.src('./lib/*.css')
-	.pipe(conc('index.css'))
-	.pipe(mini())
+	gulp.src('./lib/css/*.css')
+	.pipe(concat('index.css'))
+  .pipe(cleanCSS({keepSpecialComments:0}))
 	.pipe(gulp.dest('./public/css/'))
 })

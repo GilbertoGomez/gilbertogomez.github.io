@@ -2,14 +2,20 @@
   "name": "cv",
   "dependencies": {
     "babelify": "^6.1.3",
-    "browserify": "^11.0.1",
-    "jade": "^1.11.0",
-    "jquery": "^2.1.4"
+    "browserify": "^13.1.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.0",
+    "jquery": "^2.1.4",
+    "nib": "^1.1.2",
+    "picker.js": "^0.1.11",
+    "pug": "^2.0.0-beta6",
+    "uglifyify": "^3.0.4"
   },
   "scripts": {
-    "jade": "jade lib/index.jade --out ./",
-    "css": "stylus --use nib lib/index.styl --out public/css",
+    "pug": "pug lib/jade/index.pug --out ./",
+    "css": "stylus -u nib lib/css/index.styl ",
     "server": "http-server .",
-    "js": "browserify -t babelify lib/index.js > public/js/index.js"
+    "js": "browserify -g uglifyify -t babelify  lib/js/index.js > public/js/index.js"
   }
 }
