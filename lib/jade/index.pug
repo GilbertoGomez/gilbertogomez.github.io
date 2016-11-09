@@ -2,6 +2,8 @@
 html(lang="es")
 head
 	meta(charset="UTF-8")
+	link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+	link(rel="icon" type="image/x-icon" href="public/img/icon.ico")
 	link(type="text/css" rel="stylesheet" href="./public/css/index.css")
 	meta(name="viewport" content="width=device-width, initial-scale=1.0")
 	title CV
@@ -22,23 +24,7 @@ div.navbar-fixed
 			a.button-collapse(href='#' data-activates="slide-out")
 				i.medium.material-icons view_headline
 body
-
-	div.modal#contacto
-		div.modal-content.light-blue.darken-4
-			h4.white-text.center Contrátame
-			div.row
-				div.col.s12.center
-					a(href="mailto:jose.gilberto.gomez@gmail.com" target="_blank")
-						span.margen.icon-mail4 
-					div.white-text 
-						h5 Escríbeme a jose.gilberto.gomez@gmail.com
-					a(href="https://twitter.com/blanko_gomez" target="_blank")
-						span.margen.icon-twitter3
-					div.white-text 
-						h5 @blanko_gomez
-					div.modal-footer.light-blue.darken-4
-						a(href="#!" class="icon-cross cerrar modal-action modal-close waves-effect")
-	
+	include contacto.pug
 	div.row#main
 		div.col.s12.m6.l3.center
 			img.border.circle.responsive-img(src="./public/img/demo.jpg",alt="#")

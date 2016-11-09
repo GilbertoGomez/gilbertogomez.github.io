@@ -23,8 +23,8 @@ nav
   font-size 30px !important
   &:before
     content "\e901"
-
-.cerrar
+  
+.cerrardemo
   top 0
   position absolute !important
   display flex !important
@@ -32,7 +32,10 @@ nav
   left 0
   padding 20px
   flex-direction row-reverse
-
+  
+.cerrar
+  position absolute !important
+  
 .align
   align-items center
   display flex
@@ -146,6 +149,8 @@ footer
 .fix
   top -200px !important
 
+
+
 .nuevo
   display flex
   height 100%
@@ -170,3 +175,25 @@ footer
     transform: rotatey(200deg);
   }
 }
+
+@media only screen and (max-width: 450px)
+  
+  .icon-cross
+    font-size 20px !important
+  .modal .modal-content 
+    padding 11px !important
+  h4
+    font-size 28px !important
+
+@media only screen and (max-width: 430px)
+  .mail
+    font-size 1.34rem !important
+
+@media only screen and (max-width: 360px)
+
+  .mail
+    font-size 18px !important
+    width 80%
+    height 60px
+    display inline-block
+    word-wrap break-word

@@ -20,7 +20,7 @@ nav ul li:hover {
 .icon-cross:before {
   content: "\e901";
 }
-.cerrar {
+.cerrardemo {
   top: 0;
   position: absolute !important;
   display: -webkit-box !important;
@@ -41,6 +41,9 @@ nav ul li:hover {
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
+}
+.cerrar {
+  position: absolute !important;
 }
 .align {
   -webkit-box-align: center;
@@ -226,6 +229,31 @@ footer {
   -o-animation-duration: 4s;
   -ms-animation-duration: 4s;
   animation-duration: 4s;
+}
+@media only screen and (max-width: 450px) {
+  .icon-cross {
+    font-size: 20px !important;
+  }
+  .modal .modal-content {
+    padding: 11px !important;
+  }
+  h4 {
+    font-size: 28px !important;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .mail {
+    font-size: 1.34rem !important;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .mail {
+    font-size: 18px !important;
+    width: 80%;
+    height: 60px;
+    display: inline-block;
+    word-wrap: break-word;
+  }
 }
 @-moz-keyframes hola {
   to {
