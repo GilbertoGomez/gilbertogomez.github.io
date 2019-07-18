@@ -5,6 +5,9 @@
   font-weight: normal;
   font-style: normal;
 }
+a:hover {
+  text-decoration: none !important;
+}
 nav ul li:hover {
   background: #2196f3;
 }
@@ -127,6 +130,14 @@ footer {
   font-size: 16px !important;
   font-family: verdana !important;
 }
+.frase {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
 .border {
   border: 4px solid #1e88e5;
 }
@@ -190,6 +201,89 @@ footer {
 .fix {
   top: -200px !important;
 }
+#main {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 450px;
+}
+#main::after {
+  content: "";
+  background: url("../img/clement-h-544786-unsplash.jpg");
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.card-img-top {
+  width: 100%;
+  height: 25vw;
+  object-fit: cover;
+}
+.wraperText {
+  color: #fff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.wraperText img {
+  border-radius: 50%;
+  border: 2px solid #0e4369;
+  width: 170px;
+  height: 170px;
+}
+.wraperText p {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1em;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.wraperText span {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.borderTitle {
+  border-bottom: 3px solid #2196f3;
+  padding-bottom: 1px;
+}
 .nuevo {
   display: -webkit-box;
   display: -moz-box;
@@ -230,15 +324,74 @@ footer {
   -ms-animation-duration: 4s;
   animation-duration: 4s;
 }
+.color1 {
+  background: #1976d2;
+}
+.color2 {
+  background: #2196f3;
+}
+.color3 {
+  background: #607d8b;
+}
+.color4 {
+  background: #bbdefb;
+}
+/* Timeline holder */
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+  padding-left: 1.5rem;
+}
+/* Timeline vertical line */
+ul.timeline:before {
+  content: ' ';
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  width: 4px;
+  height: 100%;
+  z-index: 400;
+  border-radius: 1rem;
+}
+li.timeline-item {
+  margin: 20px 0;
+}
+/* Timeline item arrow */
+.timeline-arrow {
+  border-top: 0.5rem solid transparent;
+  border-right: 0.5rem solid #fff;
+  border-bottom: 0.5rem solid transparent;
+  display: block;
+  position: absolute;
+  left: 2rem;
+}
+/* Timeline item circle marker */
+li.timeline-item::before {
+  content: ' ';
+  background: #ddd;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  left: 11px;
+  width: 14px;
+  height: 14px;
+  z-index: 400;
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+@media only screen and (max-width: 750px) {
+  .card-img-top {
+    height: 55vw;
+  }
+}
 @media only screen and (max-width: 450px) {
   .icon-cross {
     font-size: 20px !important;
   }
   .modal .modal-content {
     padding: 11px !important;
-  }
-  h4 {
-    font-size: 28px !important;
   }
 }
 @media only screen and (max-width: 430px) {

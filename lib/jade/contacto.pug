@@ -1,14 +1,21 @@
-div.modal#contacto
-	div.modal-content.light-blue.darken-4
-		a(href="#!" class="icon-cross right cerrar modal-action modal-close waves-effect")
-		div.row
-			div.col.s12.center.pad-top
-				h4.white-text.center Contrátame
-				a(href="mailto:jose.gilberto.gomez@gmail.com" target="_blank")
-					span.margen.icon-mail4 
-				div.white-text
-					h5.mail jose.gilberto.gomez@gmail.com
-				a(href="https://twitter.com/blanko_gomez" target="_blank")
-					span.margen.icon-twitter3
-				div.white-text 
-					h5 @blanko_gomez
+#exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h5#exampleModalLabel.modal-title Contacto
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        form
+          .form-group
+            label(for="exampleInputNombre") Nombre
+            input#exampleInputNombre.form-control(type="text" aria-describedby="emailName" placeholder="Nombre")
+            small#emailName.form-text.text-muted 
+          .form-group
+            label(for="exampleInputEmail1") Correo
+            input#exampleInputEmail1.form-control(type="email" aria-describedby="emailHelp" placeholder="Correo")
+            small#emailHelp.form-text.text-muted
+          .form-group
+            label(for='exampleFormControlTextarea1') Comentario
+            textarea#exampleFormControlTextarea1.form-control(rows='5')
+          button.btn.btn-primary(type="submit") Enviar

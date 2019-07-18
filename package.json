@@ -1,16 +1,19 @@
 {
   "name": "cv",
   "dependencies": {
-    "babelify": "^6.1.3",
-    "browserify": "^13.1.1",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.13",
+    "@babel/core": "^7.5.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.3.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.0",
-    "jquery": "^2.1.4",
+    "jquery": "^3.4.1",
     "nib": "^1.1.2",
+    "npm": "^6.10.0",
     "picker.js": "^0.1.11",
-    "pug": "^2.0.0-beta6",
-    "uglifyify": "^3.0.4"
+    "pug": "^2.0.4",
+    "uglifyify": "^5.0.1",
+    "update": "^0.7.4"
   },
   "scripts": {
     "pug": "pug lib/jade/index.pug --out ./",

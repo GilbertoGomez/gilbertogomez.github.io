@@ -2,53 +2,50 @@
 html(lang="es")
 head
 	meta(charset="UTF-8")
-	link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+	link(href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet")
 	link(rel="icon" type="image/x-icon" href="public/img/icon.ico")
-	link(type="text/css" rel="stylesheet" href="./public/css/index.css")
+	link(type="text/css" rel="stylesheet" href="public/css/index.css")
 	meta(name="viewport" content="width=device-width, initial-scale=1.0")
-	title CV
-div.navbar-fixed
-	nav
-		div.nav-wrapper.grey.darken-4
-			a.brand-logo(href="/" ) CV
-			ul.right.hide-on-med-and-down#nav-mobile
-				li
-					a(href="#demos") Demos
-				li
-					a.modal-trigger.waves-effect(href="#contacto") Contacto
-			ul#slide-out.side-nav
-				li
-					a(href="#demos") Demos
-				li
-					a.modal-trigger.waves-effect(href="#contacto") Contacto
-			a.button-collapse(href='#' data-activates="slide-out")
-				i.medium.material-icons view_headline
-body
-	include contacto.pug
-	div.row#main
-		div.col.s12.m6.l3.center
-			img.border.circle.responsive-img(src="./public/img/demo.jpg",alt="#")
-		div.col.s12.m6.l5.center
-				h2 Gilberto Gomez
-				h4 Frontend Developer
-		div.col.s12.l4
-			div.card-panel.light-blue.darken-4.margin.hoverable
-				span.white-text Apasionado por el desarrollo web, amante de la tecnología. Siempre estoy buscando una oportunidad para aprender cosas nuevas y adquirir nuevas habilidades.
-	div.row.grey.darken-1
-		include exp.pug
-		include edu.pug
-	div.row.black
-		include skills.pug
-	div.row.grey.darken-3
-		include demos.pug
-footer.black
-	div.row 
-		div.col.s12
-			h5.center.white-text  Sígueme en
-		div.col.s12.center
-			a(href="https://twitter.com/blanko_gomez" target="_blank")
-				span.margen.icon-twitter3
-			a(href="https://facebook.com" target="_blank")
-				span.margen.icon-facebook3
-script(type="text/javascript" src="./public/js/index.js")
-script(type="text/javascript" src="./public/js/materialize.js")
+	title Gilberto Gomez Front-End
+	nav.navbar.navbar-expand-lg.nav.color1
+		button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
+			span.navbar-toggler-icon
+		#navbarNavDropdown.collapse.navbar-collapse.justify-content-center
+			ul.navbar-nav
+				li.nav-item
+					a.nav-link.text-white(href='#portafolio') Portafolio
+				li.nav-item
+					a.nav-link.text-white(href='#' data-toggle="modal" data-target="#exampleModal" ) Contacto
+	body
+		div#main
+			div.wraperText
+				img.mt-5(src="public/img/mi.jpg")
+				h1.text-dark.text-center Gilberto Gómez
+				h2.text-dark.text-center Desarrollador Frontend.
+				div.col-sm-12
+					div.d-flex.justify-content-center.text-center
+						h4.text-dark#portafolio Desarrollemos algo increible juntos.
+		.row.bg-dark
+			div.col-sm-12
+				div.d-flex.justify-content-center
+					h3.text-light.mt-5.mb-5.text-center.borderTitle Portafolio
+			include demos.pug
+		.row
+			.container
+				include about.pug
+		.row.bg-dark
+			.container
+				include edu.pug
+			.container
+				include exp.pug
+		include contacto.pug
+		.row.color1
+			.container
+				.col.d-flex.justify-content-around.mt-3
+					a(href="https://twitter.com/blanko_gomez" target="_blank")
+						span.icon-twitter3
+					a(href="mailto:jose.gilberto.gomez@gmail.com" target="_blank")
+						span.icon-mail4 
+				small.col.d-flex.justify-content-center.mb-4.text-light HTML5 | CSS3 | JavaScript | FrontEnd | PHP
+script(src="public/js/jqueryv341.js")
+script(src="public/js/bootstrap.min.js")
