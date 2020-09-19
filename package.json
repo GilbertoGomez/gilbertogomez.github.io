@@ -9,11 +9,9 @@
     "gulp-concat": "^2.6.1",
     "jquery": "^3.4.1",
     "nib": "^1.1.2",
-    "npm": "^6.10.1",
     "picker.js": "^0.1.11",
     "pug": "^2.0.4",
-    "uglifyify": "^5.0.1",
-    "update": "^0.7.4"
+    "uglifyify": "^5.0.1"
   },
   "scripts": {
     "pug": "pug lib/jade/index.pug --out ./",
