@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 html(lang="es")
 head
-	meta(charset="UTF-8")
-	link(href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet")
-	link(rel="icon" type="image/x-icon" href="public/img/icon.ico")
-	link(type="text/css" rel="stylesheet" href="public/css/index.css")
-	meta(name="viewport" content="width=device-width, initial-scale=1.0")
-	title Gilberto Gomez Front-End
-	nav.navbar.navbar-expand-lg.nav.color1
-		button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
-			span.navbar-toggler-icon
-		#navbarNavDropdown.collapse.navbar-collapse.justify-content-center
-			ul.navbar-nav
-				li.nav-item
-					a.nav-link.text-white(href='#portafolio') Portafolio
-				li.nav-item
-					a.nav-link.text-white(href='#' data-toggle="modal" data-target="#exampleModal" ) Contacto
+	meta(charset='UTF-8')
+	link(href='https://fonts.googleapis.com/css?family=Roboto&display=swap' rel='stylesheet')
+	link(rel='icon' type='image/x-icon' href='public/img/icon.ico')
+	link(type='text/css' rel='stylesheet' href='public/css/index.css')
+	meta(name='viewport' content='width=device-width, maximum-scale=1.0 user-scalable=no')
+	meta(name='description' content='Hola mi nombre es Gilberto Gómez soy programador Front End.Llevo trabajando como desarrollador más de 4 años en diferentes tecnologías como javascript,php,css,html,bootstrap,jquery python.Tienes una idea un proyecto mandame un correo.')
+	meta(name='robots' content='index, follow')
+	meta(name='keywords' content='Desarrollador,FrontEnd,freelance')
+	title Gilberto Gómez Desarrollador Front-End
 	body
-		div#main
-			div.wraperText
+		nav.navbar.navbar-expand-lg.nav.navbar-light.color1
+			button.navbar-toggler.notout(type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation')
+				span.navbar-toggler-icon
+			#navbarNavDropdown.collapse.navbar-collapse.justify-content-center
+				ul.navbar-nav
+					li.nav-item
+						#navhelou.nav-link.text-white Hello
+					li.nav-item
+						#navportafolio.nav-link.text-white Portafolio
+					li.nav-item
+						#naveducacion.nav-link.text-white Educación
+					li.nav-item
+						#navexperiencia.nav-link.text-white Experiencia
+					li.nav-item
+						a.nav-link.text-white(href='#' data-toggle='modal' data-target='#exampleModal') Contacto
+		#main
+			.wraperText
 				img.mt-5(src="public/img/mi.jpg")
 				h1.text-dark.text-center Gilberto Gómez
 				h2.text-dark.text-center Desarrollador Frontend.
 				div.col-sm-12
 					div.d-flex.justify-content-center.text-center
 						h4.text-dark#portafolio Desarrollemos algo increible juntos.
+		include about.pug
 		.row.bg-dark
 			div.col-sm-12
 				div.d-flex.justify-content-center
 					h3.text-light.mt-5.mb-5.text-center.borderTitle Portafolio
-			include demos.pug
-		.row
-			.container
-				include about.pug
+					include demos.pug
 		.row.bg-dark
 			.container
 				include edu.pug
@@ -42,10 +49,11 @@ head
 		.row.color1
 			.container
 				.col.d-flex.justify-content-around.mt-3
-					a(href="https://twitter.com/blanko_gomez" target="_blank")
-						span.icon-twitter3
-					a(href="mailto:jose.gilberto.gomez@gmail.com" target="_blank")
-						span.icon-mail4 
-				small.col.d-flex.justify-content-center.mb-4.text-light HTML5 | CSS3 | JavaScript | FrontEnd | PHP
-script(src="public/js/jqueryv341.js")
-script(src="public/js/bootstrap.min.js")
+					a(href='https://twitter.com/blanko_gomez' target='_blank')
+						img(src='/public/img/TwitterIcon.svg' alt='twitter' width='50px')
+					a.nav-link.text-white(href='#' data-toggle='modal' data-target='#exampleModal')
+						img(src='/public/img/mailicon.svg' alt='twitter' width='50px')
+				small.col.d-flex.justify-content-center.mb-4.text-light HTML5 | CSS3 | JavaScript | PHP 
+		script(rel='preload' src='public/js/jqueryv351.js')
+		script(rel='preload' src='public/js/bootstrap.min.js')
+		script(rel='preload' src='public/js/index.js')
