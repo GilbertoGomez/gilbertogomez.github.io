@@ -1,16 +1,10 @@
 {
   "name": "cv",
   "dependencies": {
-    "@babel/core": "^7.20.5",
-    "babelify": "^10.0.0",
-    "browserify": "^17.0.0",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-concat": "^2.6.1",
-    "nib": "^1.2.0",
-    "picker.js": "^0.1.11",
-    "pug": "^3.0.2",
-    "uglifyify": "^5.0.0"
+    "gulp-clean-css": "4.3.0",
+    "gulp-concat": "2.6.1",
+    "nib": "1.2.0",
+    "pug": "3.0.2"
   },
   "scripts": {
     "pug": "pug lib/jade/index.pug --out ./",
