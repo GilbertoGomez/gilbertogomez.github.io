@@ -6,6 +6,20 @@
   src url("../font/icomoon.eot?#iefix-etyqoi") format('embedded-opentype'), url("../font/icomoon.woff?-etyqoi") format('woff'), url("../font/icomoon.ttf?-etyqoi") format('truetype'), url("../font/icomoon.svg?-etyqoi#icomoon") format('svg')
   font-weight normal
   font-style normal
+.navbar
+  position fixed
+  z-index 999
+  width 100%
+.flex
+  display flex
+.auto-m
+  margin 0 auto
+h1
+  font-size: 3em;
+h2
+  font-size: 2.5em;
+h4
+  font-size: 2em;
 a:hover
   text-decoration: none !important
 nav
@@ -13,6 +27,10 @@ nav
     li
       &:hover
         background #2196f3
+
+.nav-link
+  cursor: pointer;
+  font-size: 1.1em;
 
 .iconos
   font-size 25px
@@ -73,7 +91,9 @@ nav
 .card-title
   font-weight bold !important
   font-size 30px !important
-  background #f5f5f5
+  background #d9d9d9eb
+  border-radius 5px
+  padding-left 5px
 
 .row
   margin 0 !important
@@ -158,10 +178,11 @@ footer
 .fix
   top -200px !important
 #main
-  display: block;
-  position: relative;
+  display flex
+  position relative
   width 100%
-  height: 450px;
+  height 600px
+  align-items center
   &::after
     content: "";
     background: url('../img/clement-h-544786-unsplash.jpg');
@@ -181,17 +202,16 @@ footer
 }
 .wraperText
   color white
-  display flex
-  justify-content center
   align-items center
-  flex-direction column
-  
+  justify-content center
+  display inline-block
+  position relative
+  width 100%
   img
-    border-radius 50%;
-    border 2px solid #0e4369;
-    width 170px
-    height 170px
-  
+    border-radius 50%
+    border 2px solid #0e4369
+    width 200px
+    height 200px
   p
     color: #000;
     font-family: 'Roboto', sans-serif;
@@ -212,7 +232,10 @@ footer
 .borderTitle
   border-bottom: 3px solid #2196F3;
   padding-bottom: 1px;
-            
+
+.borderColor
+  border-color:#343a40 !important;
+
 .nuevo
   display flex
   height 100%
@@ -319,3 +342,58 @@ li.timeline-item::before {
     height 60px
     display inline-block
     word-wrap break-word
+
+textarea {
+  resize: none;
+}
+
+nav ul li:hover {
+  background: #0745f3eb!important
+}
+
+.nav-item{
+  background: #15416c;
+  border-radius: 5px;
+  padding: 0px 5px;
+  margin-right: 10px;
+}
+
+.font-about
+  font-size: 1.2em
+
+.img-thumbnail 
+    padding: 0.45rem !important;
+    background-color: #fff;
+    border: 2px solid #dbdbdb !important;
+    border-radius: 0.25rem;
+    max-width: 100%;
+
+.card-footer
+  background white !important
+  display flex
+  justify-content end
+
+.colorBtn 
+  background: #15416c;
+  border: 0;
+  color: #fff;
+  padding: 13px;
+
+.colorBtn:hover
+  background: #185abcf2;
+  color: #fff;
+
+@media only screen and (max-width: 768px)
+  .nav-item
+    margin-bottom 10px
+    display flex
+    justify-content center
+    align-items center
+
+  .navbar-nav
+    width 120px
+
+  .navbar-toggler
+    margin-bottom: 10px;
+    border: 1px solid #15416c !important
+    outline: none !important
