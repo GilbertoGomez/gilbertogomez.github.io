@@ -10,7 +10,7 @@
     "nib": "^1.2.0",
     "picker.js": "^0.1.11",
     "pug": "^3.0.2",
-    "uglifyify": "^5.0.0"
+    "uglifyify": "^5.0.2"
   },
   "scripts": {
     "pug": "pug lib/jade/index.pug --out ./",
